@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca.georgebrown.benefittracker"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".BenefitTracker"
+            android:label="@string/title_activity_benefit_tracker" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".Prescriptions"
+            android:label="@string/title_activity_prescriptions" >
+        </activity>
+        <activity
+            android:name=".Dental"
+            android:label="@string/title_activity_dental" >
+        </activity>
+        <activity
+            android:name=".Vision"
+            android:label="@string/title_activity_vision" >
+        </activity>
+        <activity
+            android:name=".Other"
+            android:label="@string/title_activity_other" >
+        </activity>
+        <activity
+            android:name=".Professional"
+            android:label="@string/title_activity_professional" >
+        </activity>
+    </application>
+
+</manifest>

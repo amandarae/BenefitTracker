@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="73dp"
+        android:text="@string/other" />
+
+    <Button
+        android:id="@+id/btn_professional"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_other"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="27dp"
+        android:text="@string/prof" />
+
+    <Button
+        android:id="@+id/btn_vision"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_professional"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:text="@string/vision" />
+
+    <Button
+        android:id="@+id/btn_dental"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_vision"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:text="@string/dental" />
+
+    <Button
+        android:id="@+id/btn_rx"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_dental"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/rx" />
+
+</RelativeLayout>

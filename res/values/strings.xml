@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">GBC BenefitTracker</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_benefit_tracker">GBC BenefitTracker</string>
+    <string name="dental">Dental</string>
+    <string name="vision">Vision</string>
+    <string name="rx">Prescriptions</string>
+    <string name="prof">Professional Services</string>
+    <string name="other">Other Services</string>
+    <string name="about">About</string>
+    <string name="national">National Student (Canadian)</string>
+    <string name="international">Interational Student</string>
+    <string name="title_activity_settings">Student Settings</string>
+    <string name="title_activity_about">About GBC BenefitTracker</string>
+    <string name="about_text">BenefitTracker helps you track how much of your benefit package you have used 
+        based on the terms set by your insurance provider. Currently, this app is specific to George Brown College
+        students only.</string>
+    <string name="title_activity_prescriptions">Prescriptions</string>
+    <string name="title_activity_dental">Dental</string>
+    <string name="title_activity_vision">Vision</string>
+    <string name="title_activity_other">Other Services</string>
+    <string name="title_activity_professional">Professional Services</string>
+
+</resources>
