@@ -49,23 +49,28 @@ public class BenefitTracker extends Activity implements OnClickListener{
     }
 
 	public void onClick(View v) {
+		Intent i = new Intent();
+		String str = new String();
 		switch (v.getId()) {
-		case R.id.btn_dental:
-			Intent i = new Intent(this, Dental.class); startActivity(i);
-		break;
-		case R.id.btn_vision:
-			i = new Intent(this, Vision.class); startActivity(i);
-		break;
 		case R.id.btn_rx:
-			i = new Intent(this, Prescriptions.class); startActivity(i);
-		break;
+			str = "1";
+			break;
+		case R.id.btn_dental:
+			str = "2";
+			break;
+		case R.id.btn_vision:
+			str = "3";
+			break;
 		case R.id.btn_professional:
-			i = new Intent(this, Professional.class); startActivity(i);
-		break;
+			str = "4";
+			break;
 		case R.id.btn_other:
-			i = new Intent(this, Other.class); startActivity(i);
-		break;
+			str = "5";
+			break;
 		}
+		i = new Intent(this, Benefit.class); 
+		i.putExtra("benefit", str);
+		startActivity(i);
 		
 	}
     

@@ -2,7 +2,6 @@ package ca.georgebrown.benefittracker;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.view.Menu;
 
 public class Settings extends Activity {
 
@@ -12,9 +11,4 @@ public class Settings extends Activity {
         setContentView(R.layout.activity_settings);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_settings, menu);
-        return true;
-    }
 }

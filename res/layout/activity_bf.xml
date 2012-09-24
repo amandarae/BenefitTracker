@@ -10,8 +10,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="73dp"
-        android:text="@string/other" />
-
+        android:text="@string/benefit_5" />
     <Button
         android:id="@+id/btn_professional"
         android:layout_width="fill_parent"
@@ -19,7 +18,7 @@
         android:layout_above="@+id/btn_other"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="27dp"
-        android:text="@string/prof" />
+        android:text="@string/benefit_4" />
 
     <Button
         android:id="@+id/btn_vision"
@@ -28,7 +27,7 @@
         android:layout_above="@+id/btn_professional"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="24dp"
-        android:text="@string/vision" />
+        android:text="@string/benefit_3" />
 
     <Button
         android:id="@+id/btn_dental"
@@ -37,7 +36,7 @@
         android:layout_above="@+id/btn_vision"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="26dp"
-        android:text="@string/dental" />
+        android:text="@string/benefit_2" />
 
     <Button
         android:id="@+id/btn_rx"
@@ -46,6 +45,6 @@
         android:layout_above="@+id/btn_dental"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="30dp"
-        android:text="@string/rx" />
+        android:text="@string/benefit_1" />
 
 </RelativeLayout>

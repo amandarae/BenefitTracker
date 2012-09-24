@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<TextView
+         android:id="@+id/add_benefit"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:background="@color/label"
+         android:paddingLeft="10dp"
+         android:text="@string/benefit_title"
+         android:textSize="30dp" />
+     <TextView
+         android:id="@+id/add_transaction"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:background="@color/button"
+         android:layout_below="@+id/add_benefit"
+         android:paddingLeft="10dp"
+         android:text="@string/addtransaction_title"
+         android:textSize="20dp" />
+
+     <TextView
+         android:id="@+id/add_amount"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/add_transaction"
+         android:layout_marginTop="38dp"
+         android:layout_marginLeft="10dp"
+         android:text="@string/add_amount"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <Button
+         android:id="@+id/btn_update_transactions"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="132dp"
+         android:text="@string/update" />
+
+     <EditText
+         android:id="@+id/txt_add_amount"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/add_amount"
+         android:layout_marginRight="16dp"
+         android:layout_marginTop="22dp"
+         android:ems="10"
+         android:inputType="numberDecimal" >
+
+         <requestFocus />
+     </EditText>
+
+     <TextView
+         android:id="@+id/copay_calc"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/txt_add_amount"
+         android:layout_below="@+id/txt_add_amount"
+         android:layout_marginTop="17dp"
+         android:layout_marginRight="15dp"
+         android:gravity="right"
+         android:text="@string/copay_calc"
+         android:textSize="10dp" />
+
+</RelativeLayout>

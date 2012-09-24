@@ -29,25 +29,10 @@
             android:label="@string/title_activity_about"
             android:theme="@android:style/Theme.Dialog" >
         </activity>
-        <activity
-            android:name=".Prescriptions"
-            android:label="@string/title_activity_prescriptions" >
+        <activity android:name=".Benefit" >
         </activity>
         <activity
-            android:name=".Dental"
-            android:label="@string/title_activity_dental" >
-        </activity>
-        <activity
-            android:name=".Vision"
-            android:label="@string/title_activity_vision" >
-        </activity>
-        <activity
-            android:name=".Other"
-            android:label="@string/title_activity_other" >
-        </activity>
-        <activity
-            android:name=".Professional"
-            android:label="@string/title_activity_professional" >
+            android:name=".AddTransaction" >
         </activity>
     </application>
 
