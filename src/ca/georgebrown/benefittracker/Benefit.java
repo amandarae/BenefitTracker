@@ -3,7 +3,6 @@ package ca.georgebrown.benefittracker;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
@@ -22,19 +21,19 @@ public class Benefit extends Activity implements OnClickListener{
         title.setText(resource);
         
         findViewById(R.id.btn_add_transaction).setOnClickListener(this);
+        findViewById(R.id.btn_find_provider).setOnClickListener(this);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_benefit, menu);
-        return true;
-    }
 
 	public void onClick(View v) {
-		TextView title = (TextView) findViewById(R.id.benefit_title);
-		String benefit = (String) title.getText();
-		Intent i = new Intent(this, AddTransaction.class); 
-		i.putExtra("benefit", benefit);
-		startActivity(i);
+		if(v.getId() == R.id.btn_find_provider){
+			startActivity(new Intent(this, MapsActivity.class));
+		}else{
+			TextView title = (TextView) findViewById(R.id.benefit_title);
+			String benefit = (String) title.getText();
+			Intent i = new Intent(this, AddTransaction.class); 
+			i.putExtra("benefit", benefit);
+			startActivity(i);
+		}
 	}
 }

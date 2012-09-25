@@ -39,7 +39,7 @@
          android:layout_height="wrap_content"
          android:layout_alignParentBottom="true"
          android:layout_alignParentRight="true"
-         android:layout_marginBottom="132dp"
+         android:layout_marginBottom="102dp"
          android:text="@string/update" />
 
      <EditText
@@ -67,5 +67,28 @@
          android:gravity="right"
          android:text="@string/copay_calc"
          android:textSize="10dp" />
+
+     <TextView
+         android:id="@+id/copay_percentage"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/copay_calc"
+         android:layout_alignRight="@+id/txt_add_amount"
+         android:layout_marginTop="30dp"
+         android:layout_marginRight="32dp"
+         android:text="20%" 
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="@color/red" />
+
+     <TextView
+         android:id="@+id/copay"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/copay_calc"
+         android:layout_marginTop="30dp"
+         android:layout_marginRight="20dp"
+         android:layout_toLeftOf="@+id/copay_percentage"
+         android:text="@string/you_copay"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

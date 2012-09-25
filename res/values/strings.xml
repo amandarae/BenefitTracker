@@ -6,27 +6,33 @@
     <color name="green">#00cc66</color>
 
     <string name="app_name">GBC BenefitTracker</string>
-    <string name="menu_settings">Settings</string>
+    <string name="menu_help">Help</string>
+    <string name="help_text">Please enter the entire amount of your bill. The amount you\'ve paid is calculated automatically based on the co-pay percentage for this service, which can be seen below your input"</string>
     <string name="title_activity_benefit_tracker">GBC BenefitTracker</string>
     <string name="about">About</string>
     <string name="national">National Student (Canadian)</string>
     <string name="international">Interational Student</string>
-    <string name="title_activity_settings">Student Settings</string>
     <string name="title_activity_about">About GBC BenefitTracker</string>
     <string name="about_text">BenefitTracker helps you track how much of your benefit package you have used 
         based on the terms set by your insurance provider. Currently, this app is specific to George Brown College
         students only.	</string>
-	<string name="add_amount">Total Bill Amount:</string>
-	<string name="copay_calc">*The amount you have had to pay will be calculated automatically</string>
-	<string name="update">Add Transaction</string>
+    <string name="add_amount">Total Bill Amount:</string>
+    <string name="copay_calc">*The amount you have had to pay will be calculated automatically</string>
+    <string name="update">Save</string>
     <string name="benefit_title">Benefit</string>
     <string name="transactions">Transactions</string>
-    <string name="add_transaction">+ Add a Transaction</string>
+    <string name="find_provider">Provider</string>
+    <string name="add_transaction">+ Transaction</string>
     <string name="benefit_1">Prescriptions</string>
     <string name="benefit_2">Dental</string>
     <string name="benefit_3">Vision</string>
     <string name="benefit_4">Professional Services</string>
     <string name="benefit_5">Other Services</string>
+    <string name="dl_pdf">Download Your Booklet</string>
     <string name="addtransaction_title">Add A Transaction</string>
+    <string name="you_copay">Copay for this service: </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="provider">Provider</string>
+    <string name="provider_title">Find A Service Provider</string>
 
 </resources>

@@ -4,47 +4,57 @@
     android:layout_height="match_parent" >
 
     <Button
-        android:id="@+id/btn_other"
+        android:id="@+id/btn_rx"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="73dp"
-        android:text="@string/benefit_5" />
-    <Button
-        android:id="@+id/btn_professional"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_other"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="27dp"
-        android:text="@string/benefit_4" />
-
-    <Button
-        android:id="@+id/btn_vision"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_professional"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="24dp"
-        android:text="@string/benefit_3" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/benefit_1" />
 
     <Button
         android:id="@+id/btn_dental"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_vision"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="26dp"
+        android:layout_below="@+id/btn_rx"
+        android:layout_marginTop="20dp"
         android:text="@string/benefit_2" />
 
     <Button
-        android:id="@+id/btn_rx"
+        android:id="@+id/btn_vision"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_dental"
         android:layout_alignParentLeft="true"
-        android:layout_marginBottom="30dp"
-        android:text="@string/benefit_1" />
+        android:layout_below="@+id/btn_dental"
+        android:layout_marginTop="20dp"
+        android:text="@string/benefit_3" />
+
+    <Button
+        android:id="@+id/btn_professional"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_vision"
+        android:layout_marginTop="20dp"
+        android:text="@string/benefit_4" />
+
+    <Button
+        android:id="@+id/btn_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_professional"
+        android:layout_marginTop="20dp"
+        android:text="@string/benefit_5" />
+
+    <Button
+        android:id="@+id/btn_dl_pdf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_other"
+        android:layout_marginTop="20dp"
+        android:text="@string/dl_pdf" />
 
 </RelativeLayout>
