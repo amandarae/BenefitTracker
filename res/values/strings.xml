@@ -31,8 +31,8 @@
     <string name="dl_pdf">Download Your Booklet</string>
     <string name="addtransaction_title">Add A Transaction</string>
     <string name="you_copay">Copay for this service: </string>
-    <string name="hello_world">Hello world!</string>
     <string name="provider">Provider</string>
     <string name="provider_title">Find A Service Provider</string>
+    <string name="menu_settings">Settings</string>
 
 </resources>

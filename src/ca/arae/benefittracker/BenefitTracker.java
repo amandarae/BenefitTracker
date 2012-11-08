@@ -1,8 +1,8 @@
-package ca.georgebrown.benefittracker;
-
-
+package ca.arae.benefittracker;
 
 import java.util.ArrayList;
+
+import ca.arae.benefittracker.R;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,6 +15,7 @@ import android.view.View.OnClickListener;
 
 public class BenefitTracker extends Activity implements OnClickListener{
 
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

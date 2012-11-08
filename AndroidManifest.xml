@@ -1,24 +1,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ca.georgebrown.benefittracker"
+    package="ca.arae.benefittracker"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="9"
         android:targetSdkVersion="15" />
-    
-   
-	<uses-permission 
-	    android:name="android.permission.INTERNET" />
-	
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
-        <uses-library 
-            android:name="com.google.android.maps" /> 
-            
+       <uses-library android:name="com.google.android.maps" />
+
         <activity
             android:name=".BenefitTracker"
             android:label="@string/title_activity_benefit_tracker" >
@@ -46,7 +43,8 @@
             android:name=".MapsActivity"
             android:label="@string/provider_title" >
         </activity>
-       
+
+        <service android:name=".BTFetchService" />
     </application>
-	
+
 </manifest>

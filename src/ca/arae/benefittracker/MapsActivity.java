@@ -1,4 +1,6 @@
-package ca.georgebrown.benefittracker;
+package ca.arae.benefittracker;
+
+import ca.arae.benefittracker.R;
 
 import com.google.android.maps.MapActivity;
 import android.os.Bundle;

@@ -76,7 +76,6 @@
          android:layout_alignRight="@+id/txt_add_amount"
          android:layout_marginTop="30dp"
          android:layout_marginRight="32dp"
-         android:text="20%" 
          android:textAppearance="?android:attr/textAppearanceMedium"
          android:textColor="@color/red" />
 

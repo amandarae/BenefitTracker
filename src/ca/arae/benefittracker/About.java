@@ -1,5 +1,6 @@
-package ca.georgebrown.benefittracker;
+package ca.arae.benefittracker;
 
+import ca.arae.benefittracker.R;
 import android.os.Bundle;
 import android.app.Activity;
 
