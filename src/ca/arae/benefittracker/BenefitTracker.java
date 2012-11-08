@@ -25,8 +25,11 @@ public class BenefitTracker extends Activity implements OnClickListener{
         views.add(findViewById(R.id.btn_dental));
         views.add(findViewById(R.id.btn_vision));
         views.add(findViewById(R.id.btn_rx));
-        views.add(findViewById(R.id.btn_other));
+        views.add(findViewById(R.id.btn_psych));
         views.add(findViewById(R.id.btn_professional));
+        views.add(findViewById(R.id.btn_audio));
+        views.add(findViewById(R.id.btn_footwear));
+        views.add(findViewById(R.id.btn_eye_exam));
         views.add(findViewById(R.id.btn_dl_pdf));
         
         for(int i=0;i<views.size();i++){
@@ -65,11 +68,20 @@ public class BenefitTracker extends Activity implements OnClickListener{
 			case R.id.btn_vision:
 				str = "3";
 				break;
-			case R.id.btn_professional:
+			case R.id.btn_eye_exam:
 				str = "4";
 				break;
-			case R.id.btn_other:
+			case R.id.btn_professional:
 				str = "5";
+				break;
+			case R.id.btn_psych:
+				str = "6";
+				break;
+			case R.id.btn_audio:
+				str = "7";
+				break;
+			case R.id.btn_footwear:
+				str = "8";
 				break;
 			}
 			i = new Intent(this, Benefit.class); 

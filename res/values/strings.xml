@@ -26,8 +26,11 @@
     <string name="benefit_1">Prescriptions</string>
     <string name="benefit_2">Dental</string>
     <string name="benefit_3">Vision</string>
-    <string name="benefit_4">Professional Services</string>
-    <string name="benefit_5">Other Services</string>
+    <string name="benefit_4">Eye Exam</string>
+    <string name="benefit_5">Professional Services</string>
+    <string name="benefit_6">Psychiatric</string>
+    <string name="benefit_7">Audio</string>
+    <string name="benefit_8">Footwear</string>
     <string name="dl_pdf">Download Your Booklet</string>
     <string name="addtransaction_title">Add A Transaction</string>
     <string name="you_copay">Copay for this service: </string>

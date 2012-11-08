@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="20dp"
         android:text="@string/benefit_1" />
 
     <Button
@@ -18,7 +17,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/btn_rx"
-        android:layout_marginTop="20dp"
         android:text="@string/benefit_2" />
 
     <Button
@@ -27,34 +25,53 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/btn_dental"
-        android:layout_marginTop="20dp"
         android:text="@string/benefit_3" />
+
+    <Button
+        android:id="@+id/btn_eye_exam"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_vision"
+        android:text="@string/benefit_4" />
 
     <Button
         android:id="@+id/btn_professional"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/btn_vision"
-        android:layout_marginTop="20dp"
-        android:text="@string/benefit_4" />
+        android:layout_below="@+id/btn_eye_exam"
+        android:text="@string/benefit_5" />
 
     <Button
-        android:id="@+id/btn_other"
+        android:id="@+id/btn_psych"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/btn_professional"
-        android:layout_marginTop="20dp"
-        android:text="@string/benefit_5" />
+        android:text="@string/benefit_6" />
 
+    <Button
+        android:id="@+id/btn_audio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_psych"
+        android:text="@string/benefit_7" />
+
+    <Button
+        android:id="@+id/btn_footwear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btn_audio"
+        android:text="@string/benefit_8" />
+
     <Button
         android:id="@+id/btn_dl_pdf"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/btn_other"
-        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
         android:text="@string/dl_pdf" />
 
 </RelativeLayout>
