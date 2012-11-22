@@ -1,7 +1,6 @@
 package ca.arae.benefittracker;
 
 import java.text.NumberFormat;
-import java.util.TreeSet;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -9,11 +8,11 @@ import org.json.JSONObject;
 import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.text.Html;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TableRow.LayoutParams;
@@ -46,11 +45,13 @@ public class Benefit extends Activity implements OnClickListener, ServiceResultR
 
 
 	public void onClick(View v) {
-		if(v.getId() == R.id.btn_find_provider){
-			startActivity(new Intent(this, MapsActivity.class));
+		TextView title = (TextView) findViewById(R.id.benefit_title);
+		String benefit = (String) title.getText();
+		if(v.getId() == R.id.btn_find_provider){			
+			Intent i = new Intent(this, ProviderList.class); 
+			i.putExtra("benefit", benefit);
+			startActivity(i);
 		}else{
-			TextView title = (TextView) findViewById(R.id.benefit_title);
-			String benefit = (String) title.getText();
 			//pass benefit name, benefitId & copay
 			Intent i = new Intent(this, AddTransaction.class); 
 			i.putExtra("benefit", benefit);
@@ -70,8 +71,14 @@ public class Benefit extends Activity implements OnClickListener, ServiceResultR
 	}
 	
 	public void onReceiveResult(int resultCode, Bundle resultBundle) {
+		ProgressDialog pDialog = new ProgressDialog(Benefit.this);
 		switch (resultCode) {
 		case BTFetchService.STATUS_RUNNING:
+			pDialog = new ProgressDialog(Benefit.this);
+	        pDialog.setMessage(Html.fromHtml("<b>Please wait</b><br/>Loading data..."));
+	        pDialog.setIndeterminate(false);
+	        pDialog.setCancelable(false);
+	        pDialog.show();
 			break;
 		case BTFetchService.STATUS_SUCCESS:
 			boolean wasSuccess = resultBundle.getBoolean(BTFetchService.SERVICE_WAS_SUCCESS_KEY);

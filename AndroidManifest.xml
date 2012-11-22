@@ -8,7 +8,8 @@
         android:targetSdkVersion="15" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -40,10 +41,17 @@
             android:theme="@android:style/Theme.Dialog" >
         </activity>
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/provider_title" >
+            android:name=".MapsActivity" >
         </activity>
 
+        <activity
+            android:name=".ProviderList"
+            android:label="@string/provider_title" >
+        </activity>
+        <activity
+            android:name=".MapsPlaceDetail" >
+        </activity>
+        
         <service android:name=".BTFetchService" />
     </application>
 
